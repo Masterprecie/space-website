@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/styles.css">
+   <link rel="stylesheet" href="./css/destination.css">
+   <link rel="stylesheet" href="./css/crew.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+   <title>Space/crew</title>
+</head>
+<body id="crew">
+   <nav class="navbar navbar-light navbar-expand-lg pe-0 pt-5">
+      <div class="container-fluid pe-0">
+        <a class="navbar-brand" href="#"><img src="./img/Logo.png"></a>
+        <!-- <img src="./img/Rectangle.png" class="w-25 ms-auto" style="margin-left: 100px;"> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg ">
+               <li class="nav-item">
+               <a class="nav-link active text-light" aria-current="page" href="index.html"> <span class="fw-bold pe-2">00</span>HOME</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link text-light selected" href="destination.html">  <span class="fw-bold  pe-2">01</span> DESTINATION</a>
+               </li>
+               
+               <li class="nav-item">
+               <a class="nav-link text-light"  href="crew.html"><span class="fw-bold  pe-2">02</span>CREW</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link text-light"  href="tech.html"> <span class="fw-bold  pe-2">03</span>TECHNOLOGY</a>
+               </li>
+            </ul>
+        </div>
+      </div>
+   </nav>
+   <section class="slider-section">
+		<div class="container">
+			<p class="pick pb-0 pt-5"><span class="p-num">02</span>Meet your crew</p>
+			<!-- Swiper -->
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="crew1-content d-flex align-items-center">
+							
+							<div class="w-50 crewDiv">
+								<p class="crew1-p1">Commander</p>
+								<p class="crew1-p2">Douglas Hurley</p>
+								<p class="crew1-p3 w-75">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+								</p>
+							</div>
+							<div>
+								<img src="./img/crewImg1.png" class="img-fluid crew1Img">
+							</div>
+							
+						</div>      
+					</div>
+					<div class="swiper-slide">
+						<div class="crew1-content d-flex align-items-center">
+							<div class="w-50 crewDiv">
+								<p class="crew1-p1">Mission Specialist</p>
+								<p class="crew1-p2">MARK SHUTTLEWORTH</p>
+								<p class="crew1-p3 w-75">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.
+								</p>
+							</div>
+							<div>
+								<img src="./img/crewImg2.png" class="img-fluid crew1Img">
+							</div>
+						</div>      
+					</div>
+					<div class="swiper-slide">
+						<div class="crew1-content d-flex align-items-center">
+							<div class="w-50 crewDiv">
+								<p class="crew1-p1">PILOT</p>
+								<p class="crew1-p2">Victor Glover</p>
+								<p class="crew1-p3 w-75">Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. 
+								</p>
+							</div>
+							<div>
+								<img src="./img/crewImg3.png" class="img-fluid crew1Img">
+							</div>
+						</div>      
+					</div>
+					<div class="swiper-slide">
+						<div class="crew1-content d-flex align-items-center">
+							<div class="w-50 crewDiv">
+								<p class="crew1-p1">Flight Engineer</p>
+								<p class="crew1-p2">Anousheh Ansari</p>
+								<p class="crew1-p3 w-75">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. 
+								</p>
+							</div>
+							<div>
+								<img src="./img/crewImg4.png"class="img-fluid crew1Img">
+							</div>
+						</div>      
+					</div>
+					
+				</div>
+			<div class="swiper-pagination"></div>
+			</div>
+		</div>
+   </section>
+
+   
+   
+
+<script src="./js/bootstrap.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              autoplay: {
+                  delay: 3000,
+                  disableOnInteraction: false,
+                },
+              breakpoints: {
+                310: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                769: {
+                  slidesPerView: 1,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 1,
+                  spaceBetween: 50,
+                },
+              },
+            });
+          </script>
+
+</body>
+</html>

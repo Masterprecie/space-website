@@ -1,0 +1,139 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+/* Technology*/
+
+#tech{
+   background: url(../img/techBg.jpg);
+   height: auto;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: 'Bellefair', sans-serif ;
+}
+
+.tech-p1{
+   font-family: 'Barlow Condensed';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   letter-spacing: 2.7px;
+   color: #D0D6F9;
+}
+
+.tech-p2{
+   font-family: 'Bellefair';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 56px;
+   line-height: 64px;
+   color: #FFFFFF;
+}
+.tech-p3{
+   font-family: 'Barlow';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 32px;
+   color: #D0D6F9;
+   padding-bottom: 30px;
+}
+
+
+
+.launch-span{
+   font-family: 'Barlow Condensed';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 34px;
+   letter-spacing: 4.725px;
+   color: #FFFFFF;
+   mix-blend-mode: normal;
+   opacity: 0.25;
+}
+
+.launch{
+   font-family: 'Barlow Condensed';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 34px;
+   letter-spacing: 4.725px;
+   color: #FFFFFF;
+}
+
+.numberbox{
+   border: 1px solid ;
+   border-radius: 50%;
+   height: 70px;
+   width: 70px;
+}
+.numberbox:hover{
+   background-color: #FFFFFF;
+}
+
+.numnum{
+   padding-top: 14px;
+}
+.numnum:hover{
+   color: #000;
+}
+
+@media (max-width:800px) {
+   .nummobile{
+      display: flex!important;
+      justify-content: center;
+      padding-top: 20px;
+   }
+   .numberbox{
+      margin: 10px;
+      height: 50px;
+      width: 50px;
+   }
+   .numnum{
+      padding-top: 7px;
+   }
+   .launchwidth{
+      width: 100%!important;
+   }
+   .launchTechImg{
+      padding: 0px!important;
+   }
+   .tech{
+      text-align: center;
+   }
+
+   .tech-p1{
+      font-size: 14px;
+      line-height: 17px;
+   }
+   
+   .tech-p2{
+      font-size: 24px;
+      line-height: 28px;
+   }
+   .tech-p3{
+      font-size: 15px;
+      line-height: 25px;
+   }
+   .launch{
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+      margin-bottom: 40px!important;
+   }
+   
+   .launch-span{
+      font-size: 16px;
+      line-height: 19px;
+   }
+   .launchflip{
+      flex-direction: column-reverse;
+   }
+   
+}
